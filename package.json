@@ -14,6 +14,10 @@
     "postcss-import": "^14.0.2",
     "postcss-load-config": "^3.1.0",
     "postcss-preset-env": "^7.0.1",
-    "read-cache": "^1.0.0"
+    "read-cache": "^1.0.0",
+    "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "@hotwired/turbo": "^7.1.0"
   }
 }
