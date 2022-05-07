@@ -8,18 +8,18 @@
 @tailwind utilities;
 
 .img {
- @apply shadow-2xl shadow-slate-900/60 rounded-md
+ @apply mx-auto shadow-2xl shadow-slate-900/60 rounded-md
  }
 
  .h2 {
 	 @apply text-2xl font-bold mb-5 font-montserat
  }
  .content {
-	 @apply sticky top-5 max-w-3xl p-5 md:p-10 md:pb-0 text-lg space-y-3 leading-relaxed
+	 @apply sticky top-5 max-w-3xl px-5 py-10 md:p-10 md:pb-0 text-2xl space-y-3 leading-relaxed
  }
  .section {
-	 @apply mx-auto grid grid-cols-1 xl:grid-cols-3 gap-10 xl:gap-20
+	 @apply mx-auto grid grid-cols-1 xl:grid-cols-3 xl:gap-20
  }
  .section-img {
-	@apply xl:col-span-2 space-y-10 p-16
+	@apply xl:col-span-2 px-5 py-10 md:p-16
 }

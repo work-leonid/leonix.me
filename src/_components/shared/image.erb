@@ -1,0 +1,14 @@
+<picture class="space-y-10 ">
+  <source srcset="<%= relative_url "/images/#{@project}/#{@name}@2x.webp" %> 2x" type="image/webp">
+  <% if @cover %>
+  <img src="<%= relative_url "/images/#{@project}/#{@name}.jpg" %>" 
+       srcset="<%= relative_url "/images/#{@project}/#{@name}@2x.jpg" %> 2x" 
+       alt="#{@project.capitalize()}" 
+       class="w-full" />
+     <% else %>
+  <img src="<%= relative_url "/images/#{@project}/#{@name}.jpg" %>" 
+       srcset="<%= relative_url "/images/#{@project}/#{@name}@2x.jpg" %> 2x" 
+       alt="#{@project.capitalize()}" 
+       class="img" />
+     <% end %>
+</picture>

@@ -4,67 +4,67 @@ layout: work
 
 <div class="">
 
-  <section class="bg-slate-900 xl:py-40 section text-white">
+  <div class="bg-emerald-900 text-white">
+  <%= render Shared::Navbar.new() %>
+  <section class="xl:py-40 text-2xl section text-white">
     <div class="content">
-      <h1 class="text-6xl font-bold font-montserat">Briefcake</h1> 
+      <h1 class="text-6xl font-bold font-montserat">Product Designer</h1> 
     </div>
-    <div class="xl:col-span-2 leading-relaxed text-2xl p-10">
-      <p class="mb-10">
-      Когда погружаешься в продукт, лучше узнаешь его и то как его используют, результат работы тоже получается лучше. Вторая версия лендинга лучше показывает как работает Briefcake, как его можно использовать.
+    <div class="xl:col-span-2 space-y-3 leading-relaxed p-5 md:p-10">
+      <p >
+      Инди-приложение в котором можно создать свой новостной дайджест и получать все новые посты 1 раз в день на свою почту.
       </p>
-      <a href="#" target="_blank" class="text-purple-500">www.briefcake.com</a>
+      <p>
+      Я работал над этим проектом как дизайнер и фронтендер.
+      </p>
+      <ul class="list-disc list-inside">
+        <li>Дизайн и вёрстка лендинга со всеми страницами</li>
+        <li>Обновил дизайн самого приложения</li>
+        <li>Доработал внешний вид рассылки</li>
+      </ul>
+      <a href="mailto:work.leonid@gmail.com" class="inline-block mt-10 text-white">Contact</a>
     </div>
   </section>
+  </div>
 
-  <!-- landing -->
+  <!-- briefcake -->
 <section class="section">
   <div>
     <div class="content text-slate-700">
-      <h2 class="h2">Landing page</h2>
+      <h2 class="h2">Briefcake</h2>
       <p>
-      Когда погружаешься в продукт, лучше узнаешь его и то как его используют, результат работы тоже получается лучше. Вторая версия лендинга лучше показывает как работает Briefcake, как его можно использовать.
+      Обновление дизайна и вёрстка небольшого инди приложения.
       </p>
-      <p>
-      Для этой версии я написал тексты. Стал использовать палитру из логотипа, а не из стандартного набора Tailwind. Так же изменился шрифт сайта и я нарисовал больше иконок в стиле логотипа.
-      </p>
-      <a href="#" target="_blank" class="inline-flex gap-2 items-center bg-purple-500 hover:bg-purple-600 text-white rounded-xl px-7 py-3">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" /> </svg>
-          Прототип
+      <a href="briefcake" class="inline-flex gap-2 items-center bg-purple-500 hover:bg-purple-600 text-white rounded-xl px-7 py-3">
+        Details 
       </a>
     </div>
   </div>
   <div class="section-img bg-gradient-to-br from-rose-800 via-fuchsia-800 to-purple-900 ">
-    <img 
-      src="<%= relative_url '/images/briefcake/landing2.png' %>" 
-      srcset="<%= relative_url '/images/briefcake/landing2@2x.png'%> 2x" alt="" 
-      class="img" />
+    <a href="briefcake">
+    <%= render Shared::Image.new(name: "cover", project: "briefcake", cover: true) %>
+    </a>
   </div>
 </section>
 
-  <!-- landing -->
+  <!-- dvg -->
 <section class="section">
   <div>
     <div class="content text-slate-700">
-      <h2 class="h2">Landing page</h2>
+      <h2 class="h2">Drug Vokrug</h2>
       <p>
-      Когда погружаешься в продукт, лучше узнаешь его и то как его используют, результат работы тоже получается лучше. Вторая версия лендинга лучше показывает как работает Briefcake, как его можно использовать.
+      Обновление дизайна и вёрстка небольшого инди приложения.
       </p>
-      <p>
-      Для этой версии я написал тексты. Стал использовать палитру из логотипа, а не из стандартного набора Tailwind. Так же изменился шрифт сайта и я нарисовал больше иконок в стиле логотипа.
-      </p>
-      <a href="#" target="_blank" class="inline-flex gap-2 items-center bg-purple-500 hover:bg-purple-600 text-white rounded-xl px-7 py-3">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <path stroke-linecap="round" stroke-linejoin="round" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" /> </svg>
-          Прототип
+      <a href="briefcake" class="inline-flex gap-2 items-center bg-purple-500 hover:bg-purple-600 text-white rounded-xl px-7 py-3">
+        Details 
       </a>
     </div>
   </div>
-  <div class="section-img bg-gradient-to-br from-rose-800 via-fuchsia-800 to-purple-900 ">
-    <img 
-      src="<%= relative_url '/images/briefcake/landing2.png' %>" 
-      srcset="<%= relative_url '/images/briefcake/landing2@2x.png'%> 2x" alt="" 
-      class="img" />
+  <div class="section-img bg-gradient-to-br from-emerald-800 to-yellow-400 ">
+    <%= render Shared::Image.new(name: "cover", project: "dvg", cover: true) %>
   </div>
 </section>
+
 </div>
 
 
