@@ -123,13 +123,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hotwired/turbo@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "@hotwired/turbo@npm:7.1.0"
-  checksum: 4f71ebf2ff6a396d4031d048fa4d4dba6039aed9ad68436e6df4527e975acd8427c7d2f9b3e7f61f3e9c1af987193adf4e2b640c4033d4afd3e1f914ed05ba9f
-  languageName: node
-  linkType: hard
-
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -1127,7 +1120,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "leonix.me@workspace:."
   dependencies:
-    "@hotwired/turbo": ^7.1.0
     esbuild: ^0.13.15
     glob: ^7.2.0
     postcss: ^8.4.0

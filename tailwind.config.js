@@ -4,7 +4,11 @@ module.exports = {
     './frontend/javascript/**/*.js',
   ],
   theme: {
-    extend: {},
+    extend: {
+	fontFamily: {
+		'montserat': ['Montserrat', 'sans-serif']
+	}
+    },
   },
   plugins: [],
 }
