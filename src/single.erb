@@ -1,0 +1,56 @@
+---
+layout: work
+---
+
+<div class="">
+
+  <div class="bg-sky-700 text-white">
+
+  <%= render Shared::Navbar.new() %>
+
+  <section class="xl:py-40 section text-white">
+    <div class="section-content">
+      <h1 class="text-6xl text-white -ml-1 font-bold font-montserat">Single</h1> 
+    </div>
+    <div class="xl:col-span-2 space-y-3 leading-relaxed p-5 md:p-10">
+      <p >
+      Инди-приложение в котором можно создать свой новостной дайджест и получать все новые посты 1 раз в день на свою почту.
+      </p>
+      <p>
+      Я работал над этим проектом как дизайнер и фронтендер.
+      </p>
+      <ul class="list-disc list-inside">
+        <li>Дизайн и вёрстка лендинга со всеми страницами</li>
+        <li>Обновил дизайн самого приложения</li>
+        <li>Доработал внешний вид рассылки</li>
+      </ul>
+    </div>
+  </section>
+  </div>
+
+<section class="section">
+  <div>
+    <div class="section-content"> 
+      <h2 class="h2">Screens</h2>
+      <p>
+      Когда погружаешься в продукт, лучше узнаешь его и то как его используют, результат работы тоже получается лучше. Вторая версия лендинга лучше показывает как работает Briefcake, как его можно использовать.
+      </p>
+    </div>
+  </div>
+  <div class="section-img bg-gradient-to-br from-slate-800 to-sky-900 ">
+    <%= render Shared::Image.new(name: "single-01", project: "single") %>
+    <%= render Shared::Image.new(name: "single-02", project: "single") %>
+    <%= render Shared::Image.new(name: "single-03", project: "single") %>
+    <%= render Shared::Image.new(name: "single-04", project: "single") %>
+  </div>
+</section>
+
+<a href="<%= relative_url "briefcake" %>" class="hover:opacity-80">
+<section class="bg-slate-800 flex justify-between px-5 md:px-16 text-white text-4xl font-bold text-center py-24">
+  <span class="inline-block opacity-60">Next work:</span>
+  Briefcake
+</section>
+</a>
+</div>
+
+

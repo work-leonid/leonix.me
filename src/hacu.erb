@@ -1,0 +1,77 @@
+---
+layout: work
+---
+
+<div class="">
+
+  <div class="bg-green-700 text-white">
+
+  <%= render Shared::Navbar.new() %>
+
+  <section class="xl:py-40 section text-white">
+    <div class="section-content">
+      <h1 class="text-6xl text-white -ml-1 font-bold font-montserat">hacu</h1> 
+    </div>
+    <div class="xl:col-span-2 space-y-3 leading-relaxed p-5 md:p-10">
+      <p >
+      Инди-приложение в котором можно создать свой новостной дайджест и получать все новые посты 1 раз в день на свою почту.
+      </p>
+      <p>
+      Я работал над этим проектом как дизайнер и фронтендер.
+      </p>
+      <ul class="list-disc list-inside">
+        <li>Дизайн и вёрстка лендинга со всеми страницами</li>
+        <li>Обновил дизайн самого приложения</li>
+        <li>Доработал внешний вид рассылки</li>
+      </ul>
+    </div>
+  </section>
+  </div>
+
+
+  <!-- landing -->
+<section class="section">
+  <div>
+    <div class="section-content">
+      <h2 class="h2">Example</h2>
+      <p>
+      Когда погружаешься в продукт, лучше узнаешь его и то как его используют, результат работы тоже получается лучше. Вторая версия лендинга лучше показывает как работает Briefcake, как его можно использовать.
+      </p>
+      <p>
+      Для этой версии я написал тексты. Стал использовать палитру из логотипа, а не из стандартного набора Tailwind. Так же изменился шрифт сайта и я нарисовал больше иконок в стиле логотипа.
+      </p>
+    </div>
+  </div>
+  <div class="section-img bg-gradient-to-br from-slate-800 to-green-900 ">
+      <video controls autoplay class="mx-auto">
+        <source src="<%= relative_url "/images/hacu/hacu.mp4" %>"
+      </video>
+    <%= render Shared::Image.new(name: "landing2", project: "briefcake") %>
+  </div>
+</section>
+
+  <!-- app -->
+<section class="section">
+  <div>
+    <div class="section-content"> 
+      <h2 class="h2">Screens</h2>
+      <p>
+      Когда погружаешься в продукт, лучше узнаешь его и то как его используют, результат работы тоже получается лучше. Вторая версия лендинга лучше показывает как работает Briefcake, как его можно использовать.
+      </p>
+    </div>
+  </div>
+  <div class="section-img bg-gradient-to-br from-green-800 via-yellow-400 to-green-300  ">
+    <%= render Shared::Image.new(name: "hacu-01", project: "hacu") %>
+    <%= render Shared::Image.new(name: "hacu-02", project: "hacu") %>
+  </div>
+</section>
+
+<a href="<%= relative_url "single" %>" class="hover:opacity-80">
+<section class="bg-slate-800 flex justify-between px-5 md:px-16 text-white text-4xl font-bold text-center py-24">
+  <span class="inline-block opacity-60">Next work:</span>
+ Single 
+</section>
+</a>
+</div>
+
+

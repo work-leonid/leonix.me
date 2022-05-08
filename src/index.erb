@@ -7,8 +7,8 @@ layout: work
   <div class="bg-emerald-900 text-white">
   <%= render Shared::Navbar.new() %>
   <section class="xl:py-40 text-2xl section text-white">
-    <div class="content">
-      <h1 class="text-6xl font-bold font-montserat">Product Designer</h1> 
+    <div class="section-content">
+      <h1 class="text-6xl font-bold text-white font-montserat">Product Designer</h1> 
     </div>
     <div class="xl:col-span-2 space-y-3 leading-relaxed p-5 md:p-10">
       <p >
@@ -30,14 +30,12 @@ layout: work
   <!-- briefcake -->
 <section class="section">
   <div>
-    <div class="content text-slate-700">
+    <div class="section-content"> 
       <h2 class="h2">Briefcake</h2>
       <p>
       Обновление дизайна и вёрстка небольшого инди приложения.
       </p>
-      <a href="briefcake" class="inline-flex gap-2 items-center bg-purple-500 hover:bg-purple-600 text-white rounded-xl px-7 py-3">
-        Details 
-      </a>
+      <%= render Shared::ButtonDetail.new(link: "briefcake", color: "bg-purple-500") %>
     </div>
   </div>
   <div class="section-img bg-gradient-to-br from-rose-800 via-fuchsia-800 to-purple-900 ">
@@ -47,24 +45,77 @@ layout: work
   </div>
 </section>
 
-  <!-- dvg -->
+  <!-- hexlet -->
 <section class="section">
   <div>
-    <div class="content text-slate-700">
-      <h2 class="h2">Drug Vokrug</h2>
+    <div class="section-content"> 
+      <h2 class="h2">Hexlet</h2>
       <p>
       Обновление дизайна и вёрстка небольшого инди приложения.
       </p>
-      <a href="briefcake" class="inline-flex gap-2 items-center bg-purple-500 hover:bg-purple-600 text-white rounded-xl px-7 py-3">
-        Details 
-      </a>
+      <%= render Shared::ButtonDetail.new(link: "hexlet", color: "bg-amber-600") %>
     </div>
   </div>
-  <div class="section-img bg-gradient-to-br from-emerald-800 to-yellow-400 ">
-    <%= render Shared::Image.new(name: "cover", project: "dvg", cover: true) %>
+  <div class="section-img bg-gradient-to-br from-amber-800 to-yellow-400 ">
+    <a href="briefcake">
+    <%= render Shared::Image.new(name: "cover", project: "hexlet", cover: true) %>
+    </a>
   </div>
 </section>
 
+  <!-- dvg -->
+<section class="section">
+  <div>
+    <div class="section-content"> 
+      <h2 class="h2">Drug Vokrug</h2>
+      <p>
+      Дизайн мобильных приложений дейтинга
+      </p>
+      <%= render Shared::ButtonDetail.new(link: "dvg", color: "bg-emerald-500") %>
+    </div>
+  </div>
+  <div class="section-img bg-gradient-to-br from-emerald-800 to-yellow-400 ">
+    <a href="<%= relative_url "dvg" %>">
+    <%= render Shared::Image.new(name: "cover", project: "dvg", cover: true) %>
+    </a>
+  </div>
+</section>
+
+  <!-- hacu -->
+<section class="section">
+  <div>
+    <div class="section-content"> 
+      <h2 class="h2">hacu</h2>
+      <p>
+      Platform Helps Banks Promote its Products and Create and Better User Experience
+      </p>
+      <%= render Shared::ButtonDetail.new(link: "hacu", color: "bg-green-500") %>
+    </div>
+  </div>
+  <div class="section-img bg-gradient-to-br from-green-500 to-sky-300 ">
+    <a href="<%= relative_url "hacu" %>">
+    <%= render Shared::Image.new(name: "cover", project: "hacu", cover: true) %>
+    </a>
+  </div>
+</section>
+
+  <!-- single -->
+<section class="section">
+  <div>
+    <div class="section-content"> 
+      <h2 class="h2">Single</h2>
+      <p>
+      Platform Helps Banks Promote its Products and Create and Better User Experience
+      </p>
+      <%= render Shared::ButtonDetail.new(link: "Single", color: "bg-sky-500") %>
+    </div>
+  </div>
+  <div class="section-img bg-gradient-to-br from-sky-600 to-sky-300 ">
+    <a href="<%= relative_url "single" %>">
+    <%= render Shared::Image.new(name: "cover", project: "single", cover: true) %>
+    </a>
+  </div>
+</section>
 </div>
 
 
