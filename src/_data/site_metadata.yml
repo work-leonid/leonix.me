@@ -4,8 +4,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.metadata.myvariable }}.
 
-title: Your awesome title
-tagline: This site is totally awesome
-email: your-email@example.com
+title: Leonid Nazarov
+tagline: Product Designer
+email: work.leonid@gmail.com
 description: >-
-  Write an awesome description for your new site here. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+  8+ experience. Worked on mobile apps, web sites, and fintech services. I like projects that seem boring to other designers. I always try to think about business and users, not how fancy style is used. 

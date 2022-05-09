@@ -6,40 +6,37 @@ layout: work
 
   <div class="bg-emerald-900 text-white">
   <%= render Shared::Navbar.new() %>
-  <section class="xl:py-40 text-2xl section text-white">
+  <section class="xl:py-20 text-2xl section text-white">
     <div class="section-content">
       <h1 class="text-6xl font-bold text-white font-montserat">Product Designer</h1> 
     </div>
-    <div class="xl:col-span-2 space-y-3 leading-relaxed p-5 md:p-10">
+    <div class="xl:col-span-2 space-y-3 leading-relaxed p-5 md:p-10 ">
       <p >
-      Инди-приложение в котором можно создать свой новостной дайджест и получать все новые посты 1 раз в день на свою почту.
+      8+ experience. Worked on mobile apps, web sites, and fintech services. I like projects that seem boring to other designers. I always try to think about business and users, not how fancy style is used.
       </p>
       <p>
-      Я работал над этим проектом как дизайнер и фронтендер.
+      I know html/css and learning Ruby on Rails. In recent projects I worked as a designer/developer.
       </p>
-      <ul class="list-disc list-inside">
-        <li>Дизайн и вёрстка лендинга со всеми страницами</li>
-        <li>Обновил дизайн самого приложения</li>
-        <li>Доработал внешний вид рассылки</li>
-      </ul>
-      <a href="mailto:work.leonid@gmail.com" class="inline-block mt-10 text-white">Contact</a>
+      <a href="mailto:work.leonid@gmail.com" class="inline-block mt-10 text-white px-6 py-2 border border-white hover:border-white/50">Contact me</a>
+
     </div>
   </section>
   </div>
 
-  <!-- briefcake -->
-<section class="section">
+  <!-- briefcake --> 
+  <section class="section">
   <div>
     <div class="section-content"> 
-      <h2 class="h2">Briefcake</h2>
+      <span class="text-slate-500">UX/UI design, frontend</span>
+      <h2 class="font-montserat text-3x md:text-5xl font-bold">Briefcake</h2>
       <p>
-      Обновление дизайна и вёрстка небольшого инди приложения.
+Service for creating a news digest from your news sources. Digest will come once a day to the email
       </p>
       <%= render Shared::ButtonDetail.new(link: "briefcake", color: "bg-purple-500") %>
     </div>
   </div>
   <div class="section-img bg-gradient-to-br from-rose-800 via-fuchsia-800 to-purple-900 ">
-    <a href="briefcake">
+    <a href="<%= relative_url "briefcake" %>">
     <%= render Shared::Image.new(name: "cover", project: "briefcake", cover: true) %>
     </a>
   </div>
@@ -49,15 +46,16 @@ layout: work
 <section class="section">
   <div>
     <div class="section-content"> 
-      <h2 class="h2">Hexlet</h2>
+      <span class="text-slate-500">UI/UX design</span>
+      <h2 class="font-montserat text-3xl md:text-5xl font-bold">Hexlet</h2>
       <p>
-      Обновление дизайна и вёрстка небольшого инди приложения.
+Interactive online platform for learning programming
       </p>
       <%= render Shared::ButtonDetail.new(link: "hexlet", color: "bg-amber-600") %>
     </div>
   </div>
   <div class="section-img bg-gradient-to-br from-amber-800 to-yellow-400 ">
-    <a href="briefcake">
+    <a href="<%= relative_url "hexlet" %>">
     <%= render Shared::Image.new(name: "cover", project: "hexlet", cover: true) %>
     </a>
   </div>
@@ -67,9 +65,10 @@ layout: work
 <section class="section">
   <div>
     <div class="section-content"> 
-      <h2 class="h2">Drug Vokrug</h2>
+      <span class="text-slate-500">UI/UX design</span>
+      <h2 class="font-montserat text-3xl md:text-5xl font-bold">Drug Vokrug</h2>
       <p>
-      Дизайн мобильных приложений дейтинга
+A mobile dating app with 1 million mau users
       </p>
       <%= render Shared::ButtonDetail.new(link: "dvg", color: "bg-emerald-500") %>
     </div>
@@ -85,7 +84,8 @@ layout: work
 <section class="section">
   <div>
     <div class="section-content"> 
-      <h2 class="h2">hacu</h2>
+      <span class="text-slate-500">UI/UX design</span>
+      <h2 class="font-montserat text-3xl md:text-5xl font-bold">hacu</h2>
       <p>
       Platform Helps Banks Promote its Products and Create and Better User Experience
       </p>
@@ -103,9 +103,10 @@ layout: work
 <section class="section">
   <div>
     <div class="section-content"> 
-      <h2 class="h2">Single</h2>
+      <span class="text-slate-500">UI/UX design</span>
+      <h2 class="font-montserat text-3xl md:text-5xl font-bold">Single</h2>
       <p>
-      Platform Helps Banks Promote its Products and Create and Better User Experience
+      A luxury bank with concierge service and advanced analytics
       </p>
       <%= render Shared::ButtonDetail.new(link: "Single", color: "bg-sky-500") %>
     </div>
