@@ -1,0 +1,122 @@
+---
+layout: work
+---
+
+<div class="">
+
+  <div class="bg-emerald-900 text-white">
+  <%= render Shared::Navbar.new() %>
+  <section class="xl:py-20 text-2xl section text-white">
+    <div class="section-content">
+      <h1 class="text-6xl font-bold text-white font-montserat">Product Designer</h1> 
+    </div>
+    <div class="xl:col-span-2 space-y-3 leading-relaxed p-5 md:p-10 ">
+      <p >
+      8+ experience. Worked on mobile apps, web sites, and fintech services. I like projects that seem boring to other designers. I always try to think about business and users, not how fancy style is used.
+      </p>
+      <p>
+      I know html/css and learning Ruby on Rails. In recent projects I worked as a designer/developer.
+      </p>
+      <a href="mailto:work.leonid@gmail.com" class="inline-block mt-10 text-white px-6 py-2 border border-white hover:border-white/50">Contact me</a>
+
+    </div>
+  </section>
+  </div>
+
+  <!-- briefcake --> 
+  <section class="section">
+  <div>
+    <div class="section-content"> 
+      <span class="text-slate-500">UX/UI design, frontend</span>
+      <h2 class="font-montserat text-3x md:text-5xl font-bold">Briefcake</h2>
+      <p>
+Service for creating a news digest from your news sources. Digest will come once a day to the email
+      </p>
+      <%= render Shared::ButtonDetail.new(link: "briefcake", color: "bg-purple-500") %>
+    </div>
+  </div>
+  <div class="section-img bg-gradient-to-br from-rose-800 via-fuchsia-800 to-purple-900 ">
+    <a href="<%= relative_url "briefcake" %>">
+    <%= render Shared::Image.new(name: "cover", project: "briefcake", cover: true) %>
+    </a>
+  </div>
+</section>
+
+  <!-- hexlet -->
+<section class="section">
+  <div>
+    <div class="section-content"> 
+      <span class="text-slate-500">UI/UX design</span>
+      <h2 class="font-montserat text-3xl md:text-5xl font-bold">Hexlet</h2>
+      <p>
+Interactive online platform for learning programming
+      </p>
+      <%= render Shared::ButtonDetail.new(link: "hexlet", color: "bg-amber-600") %>
+    </div>
+  </div>
+  <div class="section-img bg-gradient-to-br from-amber-800 to-yellow-400 ">
+    <a href="<%= relative_url "hexlet" %>">
+    <%= render Shared::Image.new(name: "cover", project: "hexlet", cover: true) %>
+    </a>
+  </div>
+</section>
+
+  <!-- dvg -->
+<section class="section">
+  <div>
+    <div class="section-content"> 
+      <span class="text-slate-500">UI/UX design</span>
+      <h2 class="font-montserat text-3xl md:text-5xl font-bold">Drug Vokrug</h2>
+      <p>
+A mobile dating app with 1 million mau users
+      </p>
+      <%= render Shared::ButtonDetail.new(link: "dvg", color: "bg-emerald-500") %>
+    </div>
+  </div>
+  <div class="section-img bg-gradient-to-br from-emerald-800 to-yellow-400 ">
+    <a href="<%= relative_url "dvg" %>">
+    <%= render Shared::Image.new(name: "cover", project: "dvg", cover: true) %>
+    </a>
+  </div>
+</section>
+
+  <!-- hacu -->
+<section class="section">
+  <div>
+    <div class="section-content"> 
+      <span class="text-slate-500">UI/UX design</span>
+      <h2 class="font-montserat text-3xl md:text-5xl font-bold">hacu</h2>
+      <p>
+      Platform Helps Banks Promote its Products and Create and Better User Experience
+      </p>
+      <%= render Shared::ButtonDetail.new(link: "hacu", color: "bg-green-500") %>
+    </div>
+  </div>
+  <div class="section-img bg-gradient-to-br from-green-500 to-sky-300 ">
+    <a href="<%= relative_url "hacu" %>">
+    <%= render Shared::Image.new(name: "cover", project: "hacu", cover: true) %>
+    </a>
+  </div>
+</section>
+
+  <!-- single -->
+<section class="section">
+  <div>
+    <div class="section-content"> 
+      <span class="text-slate-500">UI/UX design</span>
+      <h2 class="font-montserat text-3xl md:text-5xl font-bold">Single</h2>
+      <p>
+      A luxury bank with concierge service and advanced analytics
+      </p>
+      <%= render Shared::ButtonDetail.new(link: "Single", color: "bg-sky-500") %>
+    </div>
+  </div>
+  <div class="section-img bg-gradient-to-br from-sky-600 to-sky-300 ">
+    <a href="<%= relative_url "single" %>">
+    <%= render Shared::Image.new(name: "cover", project: "single", cover: true) %>
+    </a>
+  </div>
+</section>
+</div>
+
+

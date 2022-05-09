@@ -1,0 +1,66 @@
+---
+layout: work
+---
+
+<div class="">
+
+  <div class="bg-green-700 text-white">
+
+  <%= render Shared::Navbar.new() %>
+
+  <section class="xl:py-20 section text-white">
+    <div class="section-content">
+      <h1 class="text-6xl text-white -ml-1 font-bold font-montserat">hacu</h1> 
+    </div>
+    <div class="xl:col-span-2 space-y-3 leading-relaxed p-5 md:p-10">
+      <p >
+Platform Helps Banks Promote its Products and Create and Better User Experience
+      </p>
+    </div>
+  </section>
+  </div>
+
+
+  <!-- landing -->
+<section class="section">
+  <div>
+    <div class="section-content">
+      <h2 class="h2">hacu platform</h2>
+      <p>
+With the hacu platform, a bank can provide customers with the best possible user experience on any platform or device. The sophisticated technology lets a bank promote its products and services with remarkable ease:
+      </p>
+    </div>
+  </div>
+  <div class="section-img bg-gradient-to-br from-slate-800 to-green-900 ">
+      <video controls autoplay class="mx-auto">
+        <source src="<%= relative_url "/images/hacu/hacu.mp4" %>"
+      </video>
+    <%= render Shared::Image.new(name: "landing2", project: "briefcake") %>
+  </div>
+</section>
+
+  <!-- app -->
+<section class="section">
+  <div>
+    <div class="section-content"> 
+      <h2 class="h2">Screens</h2>
+      <p>
+      Когда погружаешься в продукт, лучше узнаешь его и то как его используют, результат работы тоже получается лучше. Вторая версия лендинга лучше показывает как работает Briefcake, как его можно использовать.
+      </p>
+    </div>
+  </div>
+  <div class="section-img bg-gradient-to-br from-green-800 via-yellow-400 to-green-300  ">
+    <%= render Shared::Image.new(name: "hacu-01", project: "hacu") %>
+    <%= render Shared::Image.new(name: "hacu-02", project: "hacu") %>
+  </div>
+</section>
+
+<a href="<%= relative_url "single" %>" class="hover:opacity-80">
+<section class="bg-slate-800 flex justify-between px-5 md:px-16 text-white text-4xl font-bold text-center py-24">
+  <span class="inline-block opacity-60">Next work:</span>
+ Single 
+</section>
+</a>
+</div>
+
+

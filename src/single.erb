@@ -1,0 +1,48 @@
+---
+layout: work
+---
+
+<div class="">
+
+  <div class="bg-sky-700 text-white">
+
+  <%= render Shared::Navbar.new() %>
+
+  <section class="xl:py-20 section text-white">
+    <div class="section-content">
+      <h1 class="text-6xl text-white -ml-1 font-bold font-montserat">Single</h1> 
+    </div>
+    <div class="xl:col-span-2 space-y-3 leading-relaxed p-5 md:p-10">
+      <p>
+      A luxury bank with concierge service and advanced analytics
+      </p>
+    </div>
+  </section>
+  </div>
+
+<section class="section">
+  <div>
+    <div class="section-content"> 
+      <h2 class="h2">Screens</h2>
+      <p>
+In 2012, we tried to create what is now called a "neo-bank". A bank with a simple and clear interfacing, analytics that help us understand where the money goes.
+      </p>
+    </div>
+  </div>
+  <div class="section-img bg-gradient-to-br from-slate-800 to-sky-900 ">
+    <%= render Shared::Image.new(name: "single-01", project: "single") %>
+    <%= render Shared::Image.new(name: "single-02", project: "single") %>
+    <%= render Shared::Image.new(name: "single-03", project: "single") %>
+    <%= render Shared::Image.new(name: "single-04", project: "single") %>
+  </div>
+</section>
+
+<a href="<%= relative_url "briefcake" %>" class="hover:opacity-80">
+<section class="bg-slate-800 flex justify-between px-5 md:px-16 text-white text-4xl font-bold text-center py-24">
+  <span class="inline-block opacity-60">Next work:</span>
+  Briefcake
+</section>
+</a>
+</div>
+
+

@@ -1,0 +1,81 @@
+---
+layout: work
+---
+
+<div class="">
+
+  <div class="bg-amber-900 text-white">
+
+  <%= render Shared::Navbar.new() %>
+
+  <section class="xl:py-20 section text-white">
+    <div class="section-content">
+      <h1 class="text-6xl text-white -ml-1 font-bold font-montserat">Hexlet</h1> 
+    </div>
+    <div class="xl:col-span-2 space-y-3 leading-relaxed p-5 md:p-10">
+      <p >
+Interactive online platform for learning programming
+      </p>
+      <a href="https://www.hexlet.io" target="_blank" class="inline-block my-16 text-amber-400">
+www.hexlet.io
+      </a>
+    </div>
+  </section>
+  </div>
+
+
+  <!-- landing -->
+<section class="section">
+  <div>
+    <div class="section-content">
+      <h2 class="h2">Landing pages</h2>
+      <p>
+      I've updated the main product pages: the main landing page, the pages for enrolling in courses, and the learning platform screens.
+      </p>
+    </div>
+  </div>
+  <div class="section-img bg-gradient-to-br from-slate-200 to-amber-100 ">
+    <%= render Shared::Image.new(name: "landing", project: "hexlet") %>
+    <%= render Shared::Image.new(name: "catalog", project: "hexlet") %>
+    <%= render Shared::Image.new(name: "finish", project: "hexlet") %>
+  </div>
+</section>
+
+  <!-- app -->
+<section class="section">
+  <div>
+    <div class="section-content"> 
+      <h2 class="h2">New certificate</h2>
+      <p>
+Design a new certificate for those who graduated. Simplified the process of creating certificates by automating the process: Google Sheet table + plugin for figma to update information about the student made the process of creating a certificate a minute job. 
+      </p>
+    </div>
+  </div>
+  <div class="section-img bg-gradient-to-br from-rose-800 to-fuchsia-900 ">
+    <%= render Shared::Image.new(name: "certificate", project: "hexlet") %>
+  </div>
+</section>
+
+  <!-- app -->
+<section class="section">
+  <div>
+    <div class="section-content"> 
+      <h2 class="h2">Amplitude</h2>
+      <p>
+An important part of my work was to add and configure Amplitude. By adding analytics, we were able to better understand the problem areas of the service and improve the product. 
+      </p>
+    </div>
+  </div>
+  <div class="section-img bg-gradient-to-br from-sky-300 to-slate-200 ">
+    <%= render Shared::Image.new(name: "amplitude", project: "hexlet") %>
+  </div>
+</section>
+
+<a href="<%= relative_url "dvg" %>" class="hover:opacity-80">
+<section class="bg-slate-800 flex justify-between px-5 md:px-16 text-white text-4xl font-bold text-center py-24">
+  <span class="inline-block opacity-60">Next work:</span>
+  Drug Vokrug</section>
+</a>
+</div>
+
+

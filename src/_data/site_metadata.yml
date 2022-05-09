@@ -1,0 +1,11 @@
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.metadata.title }}, {{ site.metadata.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.metadata.myvariable }}.
+
+title: Leonid Nazarov
+tagline: Product Designer
+email: work.leonid@gmail.com
+description: >-
+  8+ experience. Worked on mobile apps, web sites, and fintech services. I like projects that seem boring to other designers. I always try to think about business and users, not how fancy style is used. 

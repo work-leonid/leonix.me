@@ -1,0 +1,25 @@
+/* If you need to add @import statements, do so up here */
+
+@import "jit-refresh.css"; /* triggers frontend rebuilds */
+
+/* Set up Tailwind imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.img {
+	@apply mx-auto shadow-2xl shadow-slate-900/60 rounded-md
+ }
+
+ .h2 {
+	 @apply text-2xl font-bold mb-5 font-montserat
+ }
+ .section {
+	 @apply mx-auto grid grid-cols-1 xl:grid-cols-3 xl:gap-20
+ }
+ .section-content {
+	 @apply sticky top-5 md:mb-10 max-w-3xl px-5 py-10 md:p-10 md:pb-0 space-y-3 leading-relaxed text-slate-700
+ }
+ .section-img {
+	@apply xl:col-span-2 px-5 py-10 md:p-16
+}
